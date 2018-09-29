@@ -1,0 +1,37 @@
+{
+  "_from": "jetmenu",
+  "_id": "jetmenu@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-lcYw3FooDhvJVjNGgONtSsapJv97Q14bNjLqntaTUcPuR0NaG371r0S3vO4p8c9NYNrYKkqIGQt0ahSx4yfDbw==",
+  "_location": "/jetmenu",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jetmenu",
+    "name": "jetmenu",
+    "escapedName": "jetmenu",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jetmenu/-/jetmenu-1.0.0.tgz",
+  "_shasum": "56a11592766d0e147d93e7ee5d99285a9bde98a6",
+  "_spec": "jetmenu",
+  "_where": "C:\\projects\\aaronSkudder",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "",
+  "license": "ISC",
+  "main": "./js/jetmenu.js",
+  "name": "jetmenu",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
