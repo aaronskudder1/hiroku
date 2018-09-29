@@ -1,5 +1,5 @@
-var mongoose = require('mongoose'),
-    ASModel = require('../models/ASModel');
+var mongoose = require('mongoose');
+    //ASModel = require('../models/ASModel');
 
 module.exports = function(config) {
   mongoose.connect(config.db);
@@ -9,5 +9,5 @@ module.exports = function(config) {
     console.log('AS db opened');
   });
     
-   ASModel.createASData();
+   //ASModel.createASData();
 }
