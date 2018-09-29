@@ -504,8 +504,6 @@ body.nobg .section1 {
   #intro p {
     font-size: 15px;
   }
-
-
 }
 .post-wrapper-top {
   background-color: #F5F5F5;
@@ -520,8 +518,6 @@ body.nobg .section1 {
   position: relative;
   text-align: left;
 }
-
-.post-wrapper-top .container {}
 
 .breadcrumb>li+li:before {
   color: #798184;
