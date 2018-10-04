@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"text-align:center\">\n  <div class=\"container\">\n    <a routerLink=\"career\" class=\"btn btn-success \">Career</a>\n    <a routerLink=\"recentprojects\" class=\"btn btn-success\">Recent Projects</a>\n    <a routerLink=\"education\" class=\"btn btn-success\">Education</a>\n    <a routerLink=\"experience\" class=\"btn btn-success\">Experience</a>\n</div>\n<div class=\"well\">\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div style=\"text-align:center\">\n  <div class=\"container\">\n      <a routerLink=\"overview\" class=\"btn btn-success \">Overview</a>\n      <a routerLink=\"career\" class=\"btn btn-success \">Career</a>\n      <a routerLink=\"recentprojects\" class=\"btn btn-success\">Recent Projects</a>\n      <a routerLink=\"education\" class=\"btn btn-success\">Education</a>\n      <a routerLink=\"experience\" class=\"btn btn-success\">Experience</a>\n</div>\n<div class=\"well\">\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -353,7 +353,7 @@ var ExperienceList = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Main</h2>\r\n\r\n"
+module.exports = "<h1>Aaron Skudder</h1>\r\n<p>Computer Technician and Developer</p>\r\n\r\n\r\n\r\n<div class=\"well\">\r\n    <div class=\"title\">Key Skills</div>\r\n        <a class=\"btn btn-default\" style=\"text-align:center\" href=\"~/Experiences/Details/3\">\r\n            Development in Angular2, Typescript, MongoDB, Express, NodeJS\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"~/Experiences/Details/6\">\r\n            Develop in ASP.NET Core2, MVC, C#, SQL, Angular2-Typescript\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"Experiences/Details/2\">\r\n            Computer troubleshooting and Repair\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"~Experices/Details/4\">\r\n            Network Engineering and Gateway Security\r\n        </a><br/>\r\n</div>"
 
 /***/ }),
 
@@ -487,6 +487,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var AppRoutes = [
     { path: "", component: _main_main_component__WEBPACK_IMPORTED_MODULE_0__["Main"] },
+    { path: "overview", component: _main_main_component__WEBPACK_IMPORTED_MODULE_0__["Main"] },
     { path: "career", component: _career_careerList_component__WEBPACK_IMPORTED_MODULE_1__["CareerList"] },
     { path: "recentprojects", component: _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_2__["RecentProjectsList"] },
     { path: "education", component: _education_educationList_component__WEBPACK_IMPORTED_MODULE_3__["EducationList"] },
