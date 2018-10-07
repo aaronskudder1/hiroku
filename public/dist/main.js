@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"text-align:center\">\n  <div class=\"container\">\n      <a routerLink=\"overview\" class=\"btn btn-success \">Overview</a>\n      <a routerLink=\"career\" class=\"btn btn-success \">Career</a>\n      <a routerLink=\"recentprojects\" class=\"btn btn-success\">Recent Projects</a>\n      <a routerLink=\"education\" class=\"btn btn-success\">Education</a>\n      <a routerLink=\"experience\" class=\"btn btn-success\">Experience</a>\n</div>\n<div class=\"well\">\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div class=\"col-lg-3 col-md-3 col-sm-12 title-area\">\n    <div class=\"site-title\" id=\"title\">\n      <a href=\"index.html\" title=\"\">\n        <h4>Aaron<span>Skudder</span></h4>\n      </a>\n    </div>\n  </div>\n  <!-- title area -->\n  <div class=\"col-lg-9 col-md-12 col-sm-12\">\n    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n      <div class=\"container clearfix\">\n        <ul class=\"nav navbar-nav\">\n                <li class=\"active\"><a routerLink=\"overview\">Overview</a></li>\n                <li><a href=\"About\">About</a></li>\n                <li><a routerLink=\"career\">Career</a></li>\n                <li><a routerLink=\"recentprojects\">Recent Projects</a></li>\n                <li><a routerLink=\"education\">Education</a></li>\n                <li><a routerLink=\"experience\">Experience</a></li>\n                <li><a routerLink=\"contact\">Contact</a></li>\n                <li><a href=\"~/images/Aaron Skudder CV.pdf\" i class=\"fa fa-address-card pull-right\"> CV</a></li>\n        </ul>\n      </div>\n    </nav>\n    <!-- nav -->\n  </div>\n  <!-- title area -->\n  <div class=\"container\">\n      \n</div>\n<div class=\"container\" style=\"text-align: center;\">\n      <div class=\"col-md-8 col-md-offset-2\">\n          <img class=\"lazyOwl\" style=\"width: 90px; padding-top: 10px; padding-bottom: 10px;\" src=\"images/aaron.jpg\" alt=\"\">\n      </div>\n</div>\n<div class=\"well\">\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -103,17 +103,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes */ "./src/app/routes.ts");
-/* harmony import */ var _shared_careerDataService__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./shared/careerDataService */ "./src/app/shared/careerDataService.ts");
-/* harmony import */ var _career_careerList_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./career/careerList.component */ "./src/app/career/careerList.component.ts");
-/* harmony import */ var _shared_recentProjectsDataService__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shared/recentProjectsDataService */ "./src/app/shared/recentProjectsDataService.ts");
-/* harmony import */ var _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./recentProjects/recentProjectsList.component */ "./src/app/recentProjects/recentProjectsList.component.ts");
-/* harmony import */ var _shared_educationDataService__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./shared/educationDataService */ "./src/app/shared/educationDataService.ts");
-/* harmony import */ var _education_educationList_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./education/educationList.component */ "./src/app/education/educationList.component.ts");
-/* harmony import */ var _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./experience/experienceList.component */ "./src/app/experience/experienceList.component.ts");
-/* harmony import */ var _shared_experienceDataService__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/experienceDataService */ "./src/app/shared/experienceDataService.ts");
-/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes */ "./src/app/routes.ts");
+/* harmony import */ var _shared_careerDataService__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./shared/careerDataService */ "./src/app/shared/careerDataService.ts");
+/* harmony import */ var _career_careerList_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./career/careerList.component */ "./src/app/career/careerList.component.ts");
+/* harmony import */ var _shared_recentProjectsDataService__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shared/recentProjectsDataService */ "./src/app/shared/recentProjectsDataService.ts");
+/* harmony import */ var _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./recentProjects/recentProjectsList.component */ "./src/app/recentProjects/recentProjectsList.component.ts");
+/* harmony import */ var _shared_educationDataService__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./shared/educationDataService */ "./src/app/shared/educationDataService.ts");
+/* harmony import */ var _education_educationList_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./education/educationList.component */ "./src/app/education/educationList.component.ts");
+/* harmony import */ var _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./experience/experienceList.component */ "./src/app/experience/experienceList.component.ts");
+/* harmony import */ var _shared_experienceDataService__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./shared/experienceDataService */ "./src/app/shared/experienceDataService.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _shared_contactDataService__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/contactDataService */ "./src/app/shared/contactDataService.ts");
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -134,6 +137,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 //import { Router} from '@angular/router';
 
 var AppModule = /** @class */ (function () {
@@ -142,24 +148,29 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"],
-                _main_main_component__WEBPACK_IMPORTED_MODULE_12__["Main"],
-                _career_careerList_component__WEBPACK_IMPORTED_MODULE_5__["CareerList"],
-                _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_7__["RecentProjectsList"],
-                _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_10__["ExperienceList"],
-                _education_educationList_component__WEBPACK_IMPORTED_MODULE_9__["EducationList"]
+                _app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"],
+                _main_main_component__WEBPACK_IMPORTED_MODULE_15__["Main"],
+                _career_careerList_component__WEBPACK_IMPORTED_MODULE_6__["CareerList"],
+                _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_8__["RecentProjectsList"],
+                _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_11__["ExperienceList"],
+                _education_educationList_component__WEBPACK_IMPORTED_MODULE_10__["EducationList"],
+                _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__["Contact"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(_routes__WEBPACK_IMPORTED_MODULE_3__["AppRoutes"], { useHash: true }),
+                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(_routes__WEBPACK_IMPORTED_MODULE_4__["AppRoutes"], { useHash: true }),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"]
+                //HttpClientModule,
             ],
             providers: [
-                _shared_careerDataService__WEBPACK_IMPORTED_MODULE_4__["CareerDataService"],
-                _shared_educationDataService__WEBPACK_IMPORTED_MODULE_8__["EducationDataService"],
-                _shared_recentProjectsDataService__WEBPACK_IMPORTED_MODULE_6__["ProjectsDataService"],
-                _shared_experienceDataService__WEBPACK_IMPORTED_MODULE_11__["ExperienceDataService"]
+                _shared_careerDataService__WEBPACK_IMPORTED_MODULE_5__["CareerDataService"],
+                _shared_educationDataService__WEBPACK_IMPORTED_MODULE_9__["EducationDataService"],
+                _shared_recentProjectsDataService__WEBPACK_IMPORTED_MODULE_7__["ProjectsDataService"],
+                _shared_experienceDataService__WEBPACK_IMPORTED_MODULE_12__["ExperienceDataService"],
+                _shared_contactDataService__WEBPACK_IMPORTED_MODULE_14__["ContactDataService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -222,6 +233,73 @@ var CareerList = /** @class */ (function () {
         __metadata("design:paramtypes", [_shared_careerDataService__WEBPACK_IMPORTED_MODULE_1__["CareerDataService"]])
     ], CareerList);
     return CareerList;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/contact/contact.component.html":
+/*!************************************************!*\
+  !*** ./src/app/contact/contact.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"well\">\r\n    <div>\r\n        <i class=\"fa fa-address-card\"><span class=\"strong\"> Contact Aaron Skudder</span></i>\r\n    </div>\r\n</div>\r\n    <div class=\"col-md-6\">\r\n        <div class=\"well\">\r\n            <!-- <form method=\"post\" name=\"contactForm\"> -->\r\n            <form #contactForm=\"ngForm\" (ngSubmit)=\"submit(contact)\" >\r\n                <!-- <div validation-summary=\"ModelOnly\"></div> -->\r\n\r\n                <div class=\"form-group\">\r\n                    <label for=\"name\">Your Name:</label>\r\n                    <input type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Enter your Name\" [(ngModel)]=\"contact.name\" />\r\n                    <span *ngIf=\"name.touched\" class=\"text-danger\">ooh that tickles</span>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"email\">Email:</label>\r\n                    <input type=\"email\" name=\"Email\" class=\"form-control\" [(ngModel)]=\"contact.email\" />\r\n                    <span *ngIf=\"email.touched\" class=\"text-danger\"></span>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"subject\">Subject:</label>\r\n                    <input type=\"text\" name=\"Subject\" class=\"form-control\" [(ngModel)]=\"contact.subject\"/>\r\n                    <span *ngIf=\"subject.touched\" class=\"text-danger\"></span>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"message\">Message:</label>\r\n                    <textarea rows=\"4\" name=\"Message\" class=\"form-control\" [(ngModel)]=\"contact.message\"></textarea>\r\n                    <span *ngIf=\"message.touched\" class=\"text-danger\"></span>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <input type=\"submit\" class=\"btn btn-success\" value=\"submit\" />\r\n                    <a routerLink=\"/\" class=\"btn btn-success\" value=\"submit\">Cancel</a>\r\n                    <!-- <button type=\"submit\" class=\"btn btn-primary btn-lg\" ng-click=\"submit(contact)\"><i class=\"fa fa-envelope\"></i> Send Message</button> -->\r\n                    <!-- <div class=\"text-success\">Message Sent</div> -->\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n    <div class=\"col-md-6\">\r\n        <div class=\"well\">\r\n            <div class=\"Address\">\r\n                <h4>Home Address</h4>\r\n                <address>\r\n                    1f 21 St Jude St<br />\r\n                    Avondale<br />\r\n                    <i class=\"fa fa-phone\"> 09 8203293</i><br />\r\n                    <i class=\"fa fa-mobile\"> 027 274 8743</i><br/>\r\n                    <i class=\"fa fa-envelope\"><strong>Email:</strong><a href=\"mailto:aaron@aaronskudder.com\"> aaron@aaronskudder.com</a></i><br />\r\n                    <i class=\"fa fa-facebook\"><a href=\"https://www.facebook.com/LlamaTech-Ltd-215663481830002/\"> Facebook</a></i>\r\n                </address>\r\n            </div>\r\n        </div>\r\n    </div>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/contact/contact.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/contact/contact.component.ts ***!
+  \**********************************************/
+/*! exports provided: Contact */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Contact", function() { return Contact; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_contactDataService__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/contactDataService */ "./src/app/shared/contactDataService.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Contact = /** @class */ (function () {
+    function Contact(contactData, router) {
+        this.contactData = contactData;
+        this.router = router;
+        this.title = 'Contact';
+        //
+    }
+    Contact.prototype.ngOnInit = function () {
+        this.contact = { name: '', email: '', subject: '', message: '' };
+    };
+    ;
+    Contact.prototype.submit = function (contact) {
+        //this.contactData = contactData.contact;
+        console.log(contact);
+    };
+    Contact = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'contact',
+            template: __webpack_require__(/*! ./contact.component.html */ "./src/app/contact/contact.component.html"),
+            styles: [" "]
+        }),
+        __metadata("design:paramtypes", [_shared_contactDataService__WEBPACK_IMPORTED_MODULE_1__["ContactDataService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], Contact);
+    return Contact;
 }());
 
 
@@ -480,6 +558,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./recentProjects/recentProjectsList.component */ "./src/app/recentProjects/recentProjectsList.component.ts");
 /* harmony import */ var _education_educationList_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./education/educationList.component */ "./src/app/education/educationList.component.ts");
 /* harmony import */ var _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./experience/experienceList.component */ "./src/app/experience/experienceList.component.ts");
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+
 
 
 
@@ -491,7 +571,8 @@ var AppRoutes = [
     { path: "career", component: _career_careerList_component__WEBPACK_IMPORTED_MODULE_1__["CareerList"] },
     { path: "recentprojects", component: _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_2__["RecentProjectsList"] },
     { path: "education", component: _education_educationList_component__WEBPACK_IMPORTED_MODULE_3__["EducationList"] },
-    { path: "experience", component: _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_4__["ExperienceList"] }
+    { path: "experience", component: _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_4__["ExperienceList"] },
+    { path: "contact", component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["Contact"] }
 ];
 
 
@@ -612,6 +693,48 @@ var CareerDataService = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], CareerDataService);
     return CareerDataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/contactDataService.ts":
+/*!**********************************************!*\
+  !*** ./src/app/shared/contactDataService.ts ***!
+  \**********************************************/
+/*! exports provided: ContactDataService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactDataService", function() { return ContactDataService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+// import { HttpClient } from '@angular/common/http';
+
+//import 'rxjs/add/operator/map';
+var ContactDataService = /** @class */ (function () {
+    // constructor(private http: HttpClient) {
+    function ContactDataService() {
+        this.career = [];
+    }
+    ContactDataService.prototype.loadCareer = function () {
+        return this.career;
+    };
+    ContactDataService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], ContactDataService);
+    return ContactDataService;
 }());
 
 

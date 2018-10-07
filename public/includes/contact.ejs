@@ -1,10 +1,11 @@
 <div class="well">
         <div>
-            <h1><i class="fa fa-address-card"> Contact Aaron Skudder</i></h1>
+            <i class="fa fa-address-card"><span class="strong"> Contact Aaron Skudder</span></i>
         </div>
+</div>
         <div class="col-md-6">
             <div class="well">
-                <form method="post">
+                <form method="post" name="contactForm">
                     <div asp-validation-summary="ModelOnly"></div>
     
                     <div class="form-group">
@@ -28,7 +29,7 @@
                         <span asp-validation-for="Message" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Send Message</button>
+                        <button type="submit" class="btn btn-primary btn-lg" ng-click="submit()"><i class="fa fa-envelope"></i> Send Message</button>
                         <!-- <div class="text-success">Message Sent</div> -->
                     </div>
                 </form>
@@ -49,4 +50,3 @@
                 </div>
             </div>
         </div>
-    </div>
