@@ -23,6 +23,60 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/about/about.component.html":
+/*!********************************************!*\
+  !*** ./src/app/about/about.component.html ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<h2>About Aaron Skudder</h2>\r\n\r\n<h3>Short Introduction</h3>\r\n<p>After 13 years of running a small I.T. engineering company (LlamaTech Ltd) I am taking the opportunity step back into full time employment or contracting. During the 13 years of running LlamaTech I have built up skills in customer relations and small business management.</p>\r\n\r\n<h3>Hobbies / Interests outside of work</h3>\r\n<ul><li>Piano and Bass guitar</li><li>Christianity</li></ul>\r\n\r\n<h3>Testimonials</h3>\r\n<ul>\r\n    <li>Aaron has always been helpful and went out of his way to assist when our server went down Very good service</li>\r\n\r\n    <li><b>David Holden</b> - <i>Holden Health</i>\r\n    <p>Aaron’s service is always prompt - which in our industry (as with most I imagine) is a big asset.</p>\r\n    </li>\r\n    <li>\r\n        <b>Jill</b> - <i>MWC Media</i>\r\n        <p>Very good explanation of what was going on with computer, and what was needed</p>\r\n    </li>\r\n    <li><b>Anonymous</b>\r\n    <p>Always helpful and friendly. Just keep doing what you do and I will be happy.</p></li>\r\n\r\n    <li><b>Anonymous</b>\r\n    <p>Professional service, good rates Thanks for the prompt and no fuss service.</p>\r\n</li>\r\n    <li>\r\n        <b>Alex Dawber</b> <i>Harmony Trust</i>\r\n        <p>\"Aaron you rock\" hardly ever do you find a great bargain with great product (Apple). Fantastic Computer Technician, super trade with brilliant Service support, brilliant product's what more could you ask for. Would definitely trade again. Recommend to all AAAA+++++</p>\r\n    </li>\r\n    </ul>\r\n<h3>Referees</h3>\r\n<p>Abdulfarooq_ar@yahoo.co.in Mohammed Abdul Rahman 021786884</p><p></p>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/about/about.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/about/about.component.ts ***!
+  \******************************************/
+/*! exports provided: About */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "About", function() { return About; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var About = /** @class */ (function () {
+    function About() {
+        this.title = 'Career';
+    }
+    About.prototype.ngOnInit = function () {
+        //this.careers = this.careerData.loadCareer();
+    };
+    About = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'about',
+            template: __webpack_require__(/*! ./about.component.html */ "./src/app/about/about.component.html"),
+            styleUrls: []
+        }),
+        __metadata("design:paramtypes", [])
+    ], About);
+    return About;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app.component.css":
 /*!***********************************!*\
   !*** ./src/app/app.component.css ***!
@@ -41,7 +95,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"col-lg-3 col-md-3 col-sm-12 title-area\">\n    <div class=\"site-title\" id=\"title\">\n      <a href=\"index.html\" title=\"\">\n        <h4>Aaron<span>Skudder</span></h4>\n      </a>\n    </div>\n  </div>\n  <!-- title area -->\n  <div class=\"col-lg-9 col-md-12 col-sm-12\">\n    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n      <div class=\"container clearfix\">\n        <ul class=\"nav navbar-nav\">\n                <li class=\"active\"><a routerLink=\"overview\">Overview</a></li>\n                <li><a href=\"About\">About</a></li>\n                <li><a routerLink=\"career\">Career</a></li>\n                <li><a routerLink=\"recentprojects\">Recent Projects</a></li>\n                <li><a routerLink=\"education\">Education</a></li>\n                <li><a routerLink=\"experience\">Experience</a></li>\n                <li><a routerLink=\"contact\">Contact</a></li>\n                <li><a href=\"~/images/Aaron Skudder CV.pdf\" i class=\"fa fa-address-card pull-right\"> CV</a></li>\n        </ul>\n      </div>\n    </nav>\n    <!-- nav -->\n  </div>\n  <!-- title area -->\n  <div class=\"container\">\n      \n</div>\n<div class=\"container\" style=\"text-align: center;\">\n      <div class=\"col-md-8 col-md-offset-2\">\n          <img class=\"lazyOwl\" style=\"width: 90px; padding-top: 10px; padding-bottom: 10px;\" src=\"images/aaron.jpg\" alt=\"\">\n      </div>\n</div>\n<div class=\"well\">\n  <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div class=\"well\" style=\"text-align: center;\">\n    <div class=\"site-title\" id=\"title\">\n      <a routerlink=\"about\" title=\"\">\n        <h3>Aaron<span>Skudder</span></h3>\n        <h4><strong>Computer Technician and Developer</strong></h4>\n        <img class=\"lazyOwl\" style=\"width: 110px; padding-top: 10px; padding-bottom: 10px;\" src=\"images/aaron.jpg\" alt=\"\">\n      </a>\n    </div>\n</div>\n  <!-- title area -->\n  <div class=\"col-lg-9 col-md-12 col-sm-12\">\n    <nav class=\"navbar navbar-inverse navbar-fixed-top\">\n      <div class=\"container clearfix\">\n        <ul class=\"nav navbar-nav\">\n                <li class=\"active\"><a routerLink=\"overview\">Overview</a></li>\n                <li><a routerLink=\"about\">About</a></li>\n                <li><a routerLink=\"career\">Career</a></li>\n                <li><a routerLink=\"recentprojects\">Recent Projects</a></li>\n                <li><a routerLink=\"education\">Education</a></li>\n                <li><a routerLink=\"experience\">Experience</a></li>\n                <li><a routerLink=\"contact\">Contact</a></li>\n                <li><a href=\"~/images/Aaron Skudder CV.pdf\" i class=\"fa fa-address-card pull-right\"> CV</a></li>\n        </ul>\n      </div>\n    </nav>\n    <!-- nav -->\n  </div>\n  <!-- title area -->\n\n<div class=\"well\">\n  <router-outlet></router-outlet>\n</div>\n"
 
 /***/ }),
 
@@ -116,7 +170,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
 /* harmony import */ var _shared_contactDataService__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./shared/contactDataService */ "./src/app/shared/contactDataService.ts");
 /* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -140,6 +195,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 //import { Router} from '@angular/router';
 
 var AppModule = /** @class */ (function () {
@@ -148,13 +204,14 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_17__["AppComponent"],
                 _main_main_component__WEBPACK_IMPORTED_MODULE_15__["Main"],
                 _career_careerList_component__WEBPACK_IMPORTED_MODULE_6__["CareerList"],
                 _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_8__["RecentProjectsList"],
                 _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_11__["ExperienceList"],
                 _education_educationList_component__WEBPACK_IMPORTED_MODULE_10__["EducationList"],
-                _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__["Contact"]
+                _contact_contact_component__WEBPACK_IMPORTED_MODULE_13__["Contact"],
+                _about_about_component__WEBPACK_IMPORTED_MODULE_16__["About"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -170,7 +227,7 @@ var AppModule = /** @class */ (function () {
                 _shared_experienceDataService__WEBPACK_IMPORTED_MODULE_12__["ExperienceDataService"],
                 _shared_contactDataService__WEBPACK_IMPORTED_MODULE_14__["ContactDataService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_16__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_17__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -431,7 +488,7 @@ var ExperienceList = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Aaron Skudder</h1>\r\n<p>Computer Technician and Developer</p>\r\n\r\n\r\n\r\n<div class=\"well\">\r\n    <div class=\"title\">Key Skills</div>\r\n        <a class=\"btn btn-default\" style=\"text-align:center\" href=\"~/Experiences/Details/3\">\r\n            Development in Angular2, Typescript, MongoDB, Express, NodeJS\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"~/Experiences/Details/6\">\r\n            Develop in ASP.NET Core2, MVC, C#, SQL, Angular2-Typescript\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"Experiences/Details/2\">\r\n            Computer troubleshooting and Repair\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"~Experices/Details/4\">\r\n            Network Engineering and Gateway Security\r\n        </a><br/>\r\n</div>"
+module.exports = "<div class=\"well\">\r\n    <div class=\"title\">Key Skills</div>\r\n        <a class=\"btn btn-default\" style=\"text-align:center\" href=\"~/Experiences/Details/3\">\r\n            Development in Angular2, Typescript, MongoDB, Express, NodeJS\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"~/Experiences/Details/6\">\r\n            Develop in ASP.NET Core2, MVC, C#, SQL, Angular2-Typescript\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"Experiences/Details/2\">\r\n            Computer troubleshooting and Repair\r\n        </a><br/>\r\n        <a class=\"btn btn-default\" href=\"~Experices/Details/4\">\r\n            Network Engineering and Gateway Security\r\n        </a><br/>\r\n</div>"
 
 /***/ }),
 
@@ -559,6 +616,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _education_educationList_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./education/educationList.component */ "./src/app/education/educationList.component.ts");
 /* harmony import */ var _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./experience/experienceList.component */ "./src/app/experience/experienceList.component.ts");
 /* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
+/* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./about/about.component */ "./src/app/about/about.component.ts");
+
 
 
 
@@ -572,7 +631,8 @@ var AppRoutes = [
     { path: "recentprojects", component: _recentProjects_recentProjectsList_component__WEBPACK_IMPORTED_MODULE_2__["RecentProjectsList"] },
     { path: "education", component: _education_educationList_component__WEBPACK_IMPORTED_MODULE_3__["EducationList"] },
     { path: "experience", component: _experience_experienceList_component__WEBPACK_IMPORTED_MODULE_4__["ExperienceList"] },
-    { path: "contact", component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["Contact"] }
+    { path: "contact", component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["Contact"] },
+    { path: "about", component: _about_about_component__WEBPACK_IMPORTED_MODULE_6__["About"] }
 ];
 
 
@@ -1093,7 +1153,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\projects\aaronSkudder\as-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\projects\aaronSkudder\as-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })
